@@ -20,8 +20,8 @@
  */
 'use strict'
 
-const core = require('../cedb/core')
-const ceutil = require('../ceutil')
+const core = require('cedb/core')
+const ceutil = require('@cloudengines/ceutil')
 const log = ceutil.logger('xce:rbac:rolesdb')
 
 const _keys = {

@@ -19,9 +19,8 @@
  * @brief Cloud Engines Role Based Access Control
  */
 'use strict'
-const ceutil = require('../ceutil')
+const ceutil = require('@cloudengines/ceutil')
 const log = ceutil.logger('xce:rbac')
-const cedb = require('../cedb/core')
 
 function rolesForUser(tenantid, userid) {
   return []

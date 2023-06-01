@@ -19,22 +19,12 @@
  * @brief Cloud Engines Role Based Access Control
  */
 'use strict'
-const ceutil = require('../ceutil')
+const ceutil = require('@cloudengines/ceutil')
 const log = ceutil.logger('xce:rbac')
 const core = require('./core')
-const roles = require('./roles')
-const rolesdb = require('./rolesdb')
-const express = require('express')
-
-let app = express()
-
-roles.setup(app)
 
 module.exports = {
   hooks: core.hooks,
   config: core.config,
   api: core.api,
-  roles: roles,
-  db: rolesdb,
-  app: app
 }

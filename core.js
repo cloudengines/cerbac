@@ -19,7 +19,7 @@
  * @brief Cloud Engines Role Based Access Control
  */
 'use strict'
-const ceutil = require('../ceutil')
+const ceutil = require('@cloudengines/ceutil')
 const log = ceutil.logger('xce:rbac')
 
 const defaultdb = require('./defaultdb.js')

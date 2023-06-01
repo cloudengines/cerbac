@@ -19,7 +19,7 @@
  * @brief Cloud Engines RBAC Roles API
  */
 'use strict'
-const ceutil = require('../ceutil')
+const ceutil = require('@cloudengines/ceutil')
 const log = ceutil.logger('xce:rbac:rolesapi')
 const rolesdb = require('./rolesdb.js')
 const rbac = require('./core').api()
